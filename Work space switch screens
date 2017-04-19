@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+wmctrl -s 1 #Switchees to workspace 1
+
+sleep 2 #Windows take some time to open.
+ 
+wmctrl -s 2 #Switches to workspace 2
+
+sleep 2
+
+wmctrl -s 3 #Switches to workspace 3
+
+wmctrl -s 4 #You will be left at this workspace when the script finishes executing
