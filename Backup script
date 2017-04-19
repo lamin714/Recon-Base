@@ -1,0 +1,10 @@
+#!/bin/bash
+#This is my backup file- created by Lamin
+TIMESTAMP=$(date -I)
+DEST_DIR="/home/lamin/backups"
+SRC_DIR="/home/lamin/Documents"
+FNAME="Mybackup"
+LOG="/home/lamin/log/$FNAME-$TIMESTAMP.log"
+echo "starting backup of lamin $SRC_DIR" 
+tar -vczf ${DEST_DIR}/${FNAME}-${TIMESTAMP}.tar.gz ${SRC_DIR}
+echo "Ending backup of lamin $SRC_DIR"
